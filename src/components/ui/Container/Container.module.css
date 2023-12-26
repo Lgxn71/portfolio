@@ -1,0 +1,30 @@
+.container {
+  position: relative;
+  padding: 0px 80px 0px 80px;
+  border-top: 1px solid var(--color-white-300);
+}
+.iconLeft {
+  position: relative;
+  z-index: 4;
+  left: -86px;
+  background-color: transparent;
+}
+
+.iconRight {
+  position: relative;
+  z-index: 4;
+  left: 683.9px;
+  background-color: transparent;
+}
+
+@media (max-width: 320px) {
+  .container {
+    padding: 0px 15px 0px 15px;
+  }
+  .iconLeft {
+    left: -21px;
+  }
+  .iconRight {
+    left: 257px;
+  }
+}

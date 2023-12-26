@@ -1,0 +1,14 @@
+.paragraph {
+  width: 620px;
+  padding-bottom: 20px;
+}
+.actions {
+  display: flex;
+  gap: 12px;
+}
+
+@media screen and (max-width: 320px) {
+  .paragraph {
+    width: auto;
+  }
+}

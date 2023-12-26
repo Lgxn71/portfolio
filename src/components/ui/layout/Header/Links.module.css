@@ -1,0 +1,6 @@
+.activeLink {
+  color: var(--color-black-800) !important;
+}
+.link :hover {
+  color: var(--color-black-800) !important;
+}

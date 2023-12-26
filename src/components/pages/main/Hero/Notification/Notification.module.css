@@ -1,0 +1,36 @@
+.background {
+  background-color: rgba(12, 206, 12, 0.1);
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  min-width: 140px;
+  max-width: 170px;
+
+  border-radius: 100px;
+  padding: 4px 12px;
+
+  margin-bottom: 10px;
+}
+.background p {
+  min-width: 118px;
+}
+
+.icon {
+  background-color: rgba(166, 237, 165, 255);
+  border-radius: 100px;
+
+  animation: pulseAnimation 2s infinite;
+}
+@keyframes pulseAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

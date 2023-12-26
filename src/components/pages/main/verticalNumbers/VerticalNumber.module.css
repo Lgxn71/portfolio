@@ -1,0 +1,38 @@
+.list {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+
+  padding-right: 15px;
+}
+
+.listItem {
+  height: 20px;
+  display: flex;
+  gap: 1px;
+  align-items: center;
+}
+.number {
+  transform: rotate(-90deg);
+  font-size: 10px;
+  font-weight: 400;
+  font-family: var(--font-geist-sans);
+
+  color: var(--color-gray-300);
+}
+.dash {
+  display: inline-block;
+  width: 10px;
+  height: 1px;
+  background-color: var(--color-gray-300);
+}
+@media screen and (min-width: 320px) {
+  .list {
+    display: none;
+  }
+}

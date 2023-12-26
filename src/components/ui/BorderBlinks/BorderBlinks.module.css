@@ -1,0 +1,166 @@
+.wrapperDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+
+  width: 100%;
+}
+.topBlink {
+  position: absolute;
+  top: -1.1px;
+  left: 0;
+
+  display: block;
+  height: 1px;
+  width: 10rem;
+
+  background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+  -webkit-animation: glowLinesHorizontal 1900ms ease-in forwards,
+    fadeinout 1900ms linear forwards;
+  animation: glowLinesHorizontal 1900ms ease-in forwards,
+    fadeinout 1900ms linear forwards;
+}
+.rightBlink {
+  position: absolute;
+  top: 0px;
+  right: -1px;
+
+  display: block;
+  height: 10rem;
+  width: 1px;
+
+  background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+
+  -webkit-animation: glowLinesVertical 2000ms ease-in forwards,
+    fadeinout 1800ms linear forwards;
+  animation: glowLinesVertical 2000ms ease-in forwards,
+    fadeinout 1800ms linear forwards;
+}
+
+@keyframes glowLinesHorizontal {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  5% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(40rem);
+  }
+}
+
+@-webkit-keyframes glowLinesHorizontal {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  5% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(43.5rem);
+  }
+}
+
+@keyframes glowLinesVertical {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  5% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(65rem);
+  }
+}
+@-webkit-keyframes glowLinesVertical {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  5% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(65rem);
+  }
+}
+
+@-webkit-keyframes fadeinout {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeinout {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .topBlink {
+    position: absolute;
+    top: -1.1px;
+    left: 0;
+
+    display: block;
+    height: 1px;
+    width: 5rem;
+
+    background: linear-gradient(
+      to right,
+      rgb(182, 244, 146),
+      rgb(51, 139, 147)
+    );
+    -webkit-animation: glowLinesHorizontal 1900ms ease-in forwards,
+      fadeinout 1900ms linear forwards;
+    animation: glowLinesHorizontal 1900ms ease-in forwards,
+      fadeinout 1900ms linear forwards;
+  }
+
+  @-webkit-keyframes glowLinesHorizontal {
+    100% {
+      opacity: 0;
+      transform: translateX(14rem);
+    }
+  }
+
+  @keyframes glowLinesHorizontal {
+    100% {
+      opacity: 0;
+      transform: translateX(14rem);
+    }
+  }
+}

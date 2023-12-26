@@ -1,0 +1,21 @@
+.projectCardContainer {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.title {
+  color: var(--color-black-800);
+  font-weight: 600;
+  font-size: 18px;
+  font-family: var(--font-geist-sans);
+  font-style: normal;
+  line-height: normal;
+
+  padding-bottom: 5px;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+}

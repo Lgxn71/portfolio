@@ -1,0 +1,12 @@
+.title {
+  color: var(--color-black-100);
+  font-family: var(--font-geist-sans);
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 54px;
+
+  width: 620px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

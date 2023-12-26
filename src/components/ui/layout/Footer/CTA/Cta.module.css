@@ -1,0 +1,13 @@
+.title {
+  font-family: var(--font-geist-sans);
+  color: var(--color-black-800);
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 34px;
+
+  padding-bottom: 10px;
+}
+.description {
+  width: 620px;
+  padding-bottom: 30px;
+}

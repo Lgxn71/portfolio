@@ -1,0 +1,32 @@
+.header {
+  border-bottom: 1px solid var(--color-white-300);
+}
+
+.links {
+  display: flex;
+  gap: 60px;
+
+  width: 620px;
+  margin: auto;
+  padding: 24px 0 24px 74.5px;
+}
+.links a {
+  color: var(--color-gray-300);
+  font: 500 14px var(--font-geist-sans);
+  line-height: 24px;
+  text-decoration: none;
+}
+
+@media (max-width: 320px) {
+  .links {
+    width: auto;
+    padding: 12px 30px;
+
+    align-items: center;
+    gap: 20px;
+  }
+
+  .links a {
+    font-size: 10px;
+  }
+}
