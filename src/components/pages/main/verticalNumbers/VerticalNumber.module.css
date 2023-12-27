@@ -31,7 +31,7 @@
   height: 1px;
   background-color: var(--color-gray-300);
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 435px) {
   .list {
     display: none;
   }

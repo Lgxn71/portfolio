@@ -129,7 +129,7 @@
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
   .topBlink {
     position: absolute;
     top: -1.1px;
@@ -153,14 +153,50 @@
   @-webkit-keyframes glowLinesHorizontal {
     100% {
       opacity: 0;
-      transform: translateX(14rem);
+      transform: translateX(35rem);
     }
   }
 
   @keyframes glowLinesHorizontal {
     100% {
       opacity: 0;
-      transform: translateX(14rem);
+      transform: translateX(35rem);
+    }
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .topBlink {
+    position: absolute;
+    top: -1.1px;
+    left: 0;
+
+    display: block;
+    height: 1px;
+    width: 5rem;
+
+    background: linear-gradient(
+      to right,
+      rgb(182, 244, 146),
+      rgb(51, 139, 147)
+    );
+    -webkit-animation: glowLinesHorizontal 1900ms ease-in forwards,
+      fadeinout 1900ms linear forwards;
+    animation: glowLinesHorizontal 1900ms ease-in forwards,
+      fadeinout 1900ms linear forwards;
+  }
+
+  @-webkit-keyframes glowLinesHorizontal {
+    100% {
+      opacity: 0;
+      transform: translateX(18rem);
+    }
+  }
+
+  @keyframes glowLinesHorizontal {
+    100% {
+      opacity: 0;
+      transform: translateX(18rem);
     }
   }
 }

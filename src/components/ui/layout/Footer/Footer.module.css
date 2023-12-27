@@ -18,7 +18,13 @@
   flex-direction: row;
   gap: 20px;
 }
-@media (max-width: 425px) {
+@media screen and (max-width: 580px) {
+  .footer {
+    width: auto;
+    padding: 60px 36px 100px 36px;
+  }
+}
+@media (max-width: 435px) {
   .footer {
     width: auto;
 

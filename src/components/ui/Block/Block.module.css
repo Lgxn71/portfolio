@@ -9,7 +9,7 @@
 
   flex: 1;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 435px) {
   .block {
     max-width: 16px;
   }

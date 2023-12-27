@@ -11,13 +11,13 @@ const TypingHeading = () => {
     <TypeAnimation
       splitter={(str) => splitter.splitGraphemes(str)}
       sequence={[
-        "Hi, i am Ali! 🇬🇧",
+        "Hi, i am Ali!",
         1500,
-        "안녕하세요, 제 이름은 알리입니다! 🇰🇷",
+        "안녕, 제 이름은 알리입니다!",
         1500,
-        "Привет, меня зовут Али! 🇷🇺",
+        "Привет, меня зовут Али!",
         1500,
-        "Cәлем, менің атым Али! 🇰🇿",
+        "Cәлем, менің атым Али!",
         1500,
       ]}
       speed={50}

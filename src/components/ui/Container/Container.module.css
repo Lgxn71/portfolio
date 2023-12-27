@@ -15,14 +15,92 @@
   left: 683.9px;
   background-color: transparent;
 }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0px 50px 0 50px;
+    max-width: 620px;
+  }
+  .iconLeft {
+    left: -56px;
+  }
+  .iconRight {
+    left: 554px;
+  }
+}
+@media (max-width: 580px) {
+  .container {
+    padding: 0px 50px 0 50px;
+    max-width: 620px;
+  }
+  .iconLeft {
+    left: -56px;
+  }
+  .iconRight {
+    left: 442px;
+  }
+}
+
 @media (max-width: 435px) {
   .container {
     padding: 0px 20px 0px 20px;
+  }
+  .iconLeft {
+    left: -26px;
+  }
+  .iconRight {
+    left: 362px;
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    padding: 0px 20px 0px 20px;
+  }
+  .iconLeft {
+    left: -26px;
   }
   .iconRight {
     left: 357px;
   }
 }
+
+@media (max-width: 414px) {
+  .container {
+    padding: 0px 20px 0px 20px;
+  }
+  .iconLeft {
+    left: -26px;
+  }
+  .iconRight {
+    left: 346px;
+  }
+}
+
+@media (max-width: 412px) {
+  .container {
+    padding: 0px 20px 0px 20px;
+  }
+  .iconLeft {
+    left: -26px;
+  }
+  .iconRight {
+    left: 344px;
+  }
+}
+
+@media (max-width: 390px) {
+  .container {
+    padding: 0px 20px 0px 20px;
+  }
+  .iconLeft {
+    left: -26px;
+  }
+  .iconRight {
+    left: 322px;
+  }
+}
+
 @media (max-width: 375px) {
   .container {
     padding: 0px 20px 0px 20px;
@@ -35,6 +113,18 @@
   }
 }
 
+@media (max-width: 360px) {
+  .container {
+    padding: 0px 20px 0px 20px;
+  }
+  .iconLeft {
+    left: -26px;
+  }
+  .iconRight {
+    left: 292px;
+  }
+}
+
 @media (max-width: 320px) {
   .container {
     padding: 0px 15px 0px 15px;
@@ -44,5 +134,16 @@
   }
   .iconRight {
     left: 257px;
+  }
+}
+@media screen and (max-width: 280px) {
+  .container {
+    padding: 0px 10px 0px 10px;
+  }
+  .iconLeft {
+    left: -16px;
+  }
+  .iconRight {
+    left: 222px;
   }
 }
