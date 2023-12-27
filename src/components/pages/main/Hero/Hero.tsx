@@ -19,14 +19,14 @@ const Hero = () => {
       </p>
       <div className={styles.actions}>
         <a
-          href=""
+          href="https://github.com/Lgxn71"
           className={buttonVariants({ size: "default", variant: "default" })}
         >
           github
         </a>
 
         <a
-          href=""
+          href="https://www.linkedin.com/in/lgxn71/"
           className={buttonVariants({ size: "default", variant: "default" })}
         >
           linkedin
