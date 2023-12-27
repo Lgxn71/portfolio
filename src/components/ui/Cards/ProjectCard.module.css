@@ -2,6 +2,7 @@
   display: flex;
   gap: 20px;
   flex-direction: column;
+  max-width: 620px;
 }
 
 .title {
@@ -18,4 +19,16 @@
 .links {
   display: flex;
   gap: 20px;
+}
+
+@media (max-width: 375px) {
+  .projectCardContainer {
+    max-width: 315px;
+  }
+}
+
+@media (max-width: 320px) {
+  .projectCardContainer {
+    max-width: 300px;
+  }
 }

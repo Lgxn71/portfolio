@@ -1,7 +1,6 @@
 import Links from "./Links";
 
 import styles from "./Header.module.css";
-
 const Header = () => (
   <header className={styles.header}>
     <nav>

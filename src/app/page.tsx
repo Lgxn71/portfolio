@@ -6,11 +6,9 @@ import Hero from "@/components/pages/main/Hero/Hero";
 import BorderBlinks from "@/components/ui/BorderBlinks/BorderBlinks";
 import VerticalNumbers from "@/components/pages/main/verticalNumbers/VerticalNumbers";
 
-const blockHeight = 1200.4;
-
 const Home = () => (
   <main style={{ display: "flex" }}>
-    <Block height={blockHeight}>
+    <Block>
       <VerticalNumbers numbersLength={10} startingNumber={240} />
     </Block>
     <div>
@@ -23,6 +21,8 @@ const Home = () => (
       </Container>
 
       <Container
+        hasBorderTop={true}
+        hasBorderBottom={true}
         iconTopPosition="-39.4px"
         paddingTop="30px"
         paddingBottom="100px"
@@ -33,7 +33,7 @@ const Home = () => (
       </Container>
     </div>
 
-    <Block height={blockHeight} />
+    <Block />
   </main>
 );
 

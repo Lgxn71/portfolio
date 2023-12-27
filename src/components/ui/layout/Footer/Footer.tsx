@@ -13,8 +13,8 @@ const Footer = () => (
         <p className="colorGray300">© 2023</p>
       </div>
       <div className={styles.links}>
-        <a href="">Github</a>
-        <a href="">Linkedin</a>
+        <a href="https://github.com/Lgxn71">Github</a>
+        <a href="https://www.linkedin.com/in/lgxn71/">Linkedin</a>
       </div>
     </div>
   </footer>

@@ -10,3 +10,9 @@
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 425px) {
+  .title {
+    width: auto;
+    font-size: 30px;
+  }
+}

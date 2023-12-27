@@ -9,6 +9,8 @@
   width: 620px;
   margin: auto;
   padding: 24px 0 24px 74.5px;
+
+  justify-content: space-around;
 }
 .links a {
   color: var(--color-gray-300);
@@ -17,7 +19,7 @@
   text-decoration: none;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 425px) {
   .links {
     width: auto;
     padding: 12px 30px;

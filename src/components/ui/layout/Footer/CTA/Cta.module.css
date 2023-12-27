@@ -11,3 +11,8 @@
   width: 620px;
   padding-bottom: 30px;
 }
+@media (max-width: 425px) {
+  .description {
+    width: auto;
+  }
+}

@@ -10,19 +10,18 @@ import VerticalNumbers from "@/components/pages/main/verticalNumbers/VerticalNum
 
 import styles from "./Cta.module.css";
 
-const blockHeight = 295.5;
-
 const Cta = () => {
   const pathname = usePathname();
   return (
     <>
-      <Block height={blockHeight}>
+      <Block>
         {pathname === "/" ? (
           <VerticalNumbers startingNumber={229} numbersLength={2} />
         ) : null}
       </Block>
 
       <Container
+        hasBorderBottom={true}
         iconTopPosition="-69.4px"
         paddingTop="60px"
         paddingBottom="70px"
@@ -38,7 +37,7 @@ const Cta = () => {
         </Link>
       </Container>
 
-      <Block height={blockHeight} />
+      <Block />
     </>
   );
 };

@@ -129,7 +129,7 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
   .topBlink {
     position: absolute;
     top: -1.1px;

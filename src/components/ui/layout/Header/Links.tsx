@@ -20,11 +20,11 @@ const Links = () => {
   const isActive = (href: string) => href === pathname;
 
   const downloadFile = () => {
-    const fileUrl = "/assets/resume/CV_1.pdf";
+    const fileUrl = "/assets/resume/Akhmetbekuly_Mukhammedali_CV.pdf";
     const link = linkRef.current;
     if (link) {
       link.href = fileUrl;
-      link.download = "CV_1.pdf";
+      link.download = "Akhmetbekuly_Mukhammedali_CV.pdf";
     }
   };
 

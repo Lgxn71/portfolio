@@ -60,13 +60,3 @@ a {
   color: var(--color-black-800) !important;
 }
 
-.aboutParagraphContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-
-  padding-top: 50px;
-}
-.aboutParagraphContainer p {
-  width: 620px;
-}

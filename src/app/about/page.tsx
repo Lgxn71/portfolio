@@ -4,15 +4,16 @@ import Block from "@/components/ui/Block/Block";
 import Container from "@/components/ui/Container/Container";
 import PageTitle from "@/components/ui/PageTitle/PageTitle";
 
-const blockHeight = 550;
+import styles from "@/styles/about/about.module.css";
 
 const aboutPage = () => (
   <main style={{ display: "flex" }}>
-    <Block height={blockHeight}></Block>
+    <Block />
     <Container
       iconTopPosition="-69.5px"
       paddingTop="60px"
       paddingBottom="100px"
+      hasBorderBottom={true}
     >
       <PageTitle>
         Hey There,
@@ -20,17 +21,14 @@ const aboutPage = () => (
           width={100}
           height={100}
           quality={100}
-          alt=""
+          alt="my Memoji"
           src={"/assets/aliMemoji.PNG"}
-          style={{
-            border: "1px solid rgba(113, 148, 113, 0.302)",
-            borderRadius: "100px",
-          }}
+          className={styles.img}
         />
       </PageTitle>
-      <div className="aboutParagraphContainer">
+      <div className={styles.aboutParagraphContainer}>
         <p>
-          Hello there! My name is Ali. I&apos;m an 18-year-old computer science
+          My name is Ali. I&apos;m an 18-year-old computer science
           and computer engineering student pursuing my Bachelor&apos;s degree at
           Sejong University in Seoul. My passion for learning is not just a part
           of my academic journey; it&apos;s a way of life. As a dedicated and
@@ -46,7 +44,7 @@ const aboutPage = () => (
         </p>
       </div>
     </Container>
-    <Block height={blockHeight}></Block>
+    <Block />
   </main>
 );
 export default aboutPage;

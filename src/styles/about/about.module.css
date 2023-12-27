@@ -1,0 +1,20 @@
+.aboutParagraphContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  padding-top: 50px;
+}
+.aboutParagraphContainer p {
+  width: 620px;
+}
+.img {
+  border: 1px solid rgba(113, 148, 113, 0.302);
+  border-radius: 100px;
+}
+
+@media (max-width: 425px) {
+  .aboutParagraphContainer p {
+    width: auto;
+  }
+}

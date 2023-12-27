@@ -5,14 +5,14 @@ import PageTitle from "@/components/ui/PageTitle/PageTitle";
 import ProjectCard from "@/components/ui/Cards/ProjectCard";
 import BorderBlinks from "@/components/ui/BorderBlinks/BorderBlinks";
 
-const blockHeight = 733;
 const ProjectsPage = () => (
   <main style={{ display: "flex" }}>
-    <Block height={blockHeight} />
+    <Block />
     <Container
-      iconTopPosition="-69.4px"
-      paddingTop="60px"
+      iconTopPosition="-59.4px"
+      paddingTop="50px"
       paddingBottom="100px"
+      hasBorderBottom={true}
     >
       <BorderBlinks />
       <div style={{ display: "flex", gap: "50px", flexDirection: "column" }}>
@@ -35,7 +35,7 @@ const ProjectsPage = () => (
         />
       </div>
     </Container>
-    <Block height={blockHeight} />
+    <Block />
   </main>
 );
 export default ProjectsPage;
