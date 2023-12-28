@@ -28,7 +28,7 @@ const aboutPage = () => (
       </PageTitle>
       <div className={styles.aboutParagraphContainer}>
         <p>
-          Hi again, I&apos;m Ali, a Kazakh sophomore student currently pursuing
+          Hi again! I&apos;m Ali, a Kazakh sophomore student currently pursuing
           a Bachelor&apos;s degree in Computer Science and Engineering at Sejong
           University in Seoul, South Korea.
         </p>
