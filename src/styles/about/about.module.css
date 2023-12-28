@@ -13,7 +13,7 @@
   border-radius: 100px;
 }
 
-@media (max-width: 435px) {
+@media (max-width: 797px) {
   .aboutParagraphContainer p {
     width: auto;
   }

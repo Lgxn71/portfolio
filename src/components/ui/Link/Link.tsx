@@ -11,8 +11,8 @@ const Link: FC<LinkProps> = ({ href, children, isTarget, ...props }) => {
     <a
       className={styles.link}
       href={href}
-      {...props}
       target={isTarget ? "_blank" : ""}
+      {...props}
     >
       {children}
     </a>

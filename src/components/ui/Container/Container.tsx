@@ -12,6 +12,7 @@ interface IContainerProps {
   hasBorderTop?: boolean;
   hasBorderBottom?: boolean;
 }
+
 const Container: FC<IContainerProps> = ({
   children,
   paddingTop,
@@ -24,6 +25,7 @@ const Container: FC<IContainerProps> = ({
   const borderBottom = hasBorderBottom
     ? "1px solid rgba(238, 240, 243, 1)"
     : "";
+
   return (
     <div
       className={styles.container}

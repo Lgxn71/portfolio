@@ -21,7 +21,7 @@ const ProjectsPage = () => (
         <ProjectCard
           projectTitle="Soundbase"
           iconName="SoundbaseLogo"
-          projectDescription="I am a frontend developer based in Seoul, South Korea, currently pursuing my bachelor's degree in Computer Science at Sejong University.s"
+          projectDescription="This pet-project is a Nextjs application. It was built using Nextjs, Recoil for statemanagement, Typescript, StripeAPI to provide payment functionality, and Mongodb as a database"
           githubLink="https://github.com/Lgxn71/e-commerce-soundbase"
           lifeDemoLink="https://e-commerce-soundbase.vercel.app/"
         />
@@ -29,7 +29,7 @@ const ProjectsPage = () => (
         <ProjectCard
           projectTitle="Arta Medicus"
           iconName="ArtamedicusLogo"
-          projectDescription="I am a frontend developer based in Seoul, South Korea, currently pursuing my bachelor's degree in Computer Science at Sejong University."
+          projectDescription="Landing Page with Integrated Twilio API for plastic surgery clinic"
           githubLink="https://github.com/Lgxn71/Altamedicus"
           lifeDemoLink="https://www.artamedicus.com/"
         />

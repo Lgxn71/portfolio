@@ -1,0 +1,33 @@
+/* Base Card Wrapper */
+.projectCardContainer {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  max-width: 620px;
+}
+
+/* Icon Container */
+.container {
+  border-radius: 10px;
+  border: 1px solid var(--color-white-400);
+  background: var(--color-white-100);
+
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containerInside {
+  width: 97%;
+  height: 97%;
+  margin: auto;
+
+  border: 1px solid var(--color-white-400);
+  border-radius: 9px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

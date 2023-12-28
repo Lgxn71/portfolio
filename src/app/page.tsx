@@ -4,7 +4,7 @@ import Container from "@/components/ui/Container/Container";
 import ProjectsMain from "@/components/pages/main/ProjectsMain/ProjectsMain";
 import Hero from "@/components/pages/main/Hero/Hero";
 import BorderBlinks from "@/components/ui/BorderBlinks/BorderBlinks";
-import VerticalNumbers from "@/components/pages/main/verticalNumbers/VerticalNumbers";
+import VerticalNumbers from "@/components/pages/main/VerticalNumbers/VerticalNumbers";
 
 const Home = () => (
   <main style={{ display: "flex" }}>

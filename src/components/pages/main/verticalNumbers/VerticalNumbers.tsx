@@ -6,6 +6,7 @@ interface IVerticalNumbersProps {
   numbersLength: number;
   startingNumber: number;
 }
+
 const VerticalNumbers: FC<IVerticalNumbersProps> = ({
   numbersLength,
   startingNumber,

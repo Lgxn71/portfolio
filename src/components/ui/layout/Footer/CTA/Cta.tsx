@@ -6,7 +6,7 @@ import Block from "@/components/ui/Block/Block";
 import Container from "@/components/ui/Container/Container";
 import Link from "../../../Link/Link";
 
-import VerticalNumbers from "@/components/pages/main/verticalNumbers/VerticalNumbers";
+import VerticalNumbers from "@/components/pages/main/VerticalNumbers/VerticalNumbers";
 
 import styles from "./Cta.module.css";
 

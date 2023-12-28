@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, ReactNode } from "react";
 
 import ProjectIconContainer from "../Icons/ProjectIconContainer";
 import Icon, { IconName } from "../Icons/Icon";
@@ -25,6 +25,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
     <ProjectIconContainer>
       <Icon name={iconName} />
     </ProjectIconContainer>
+
     <div>
       <h1 className={styles.title}>{projectTitle}</h1>
       <p>{projectDescription}</p>
@@ -40,5 +41,4 @@ const ProjectCard: FC<ProjectCardProps> = ({
     </div>
   </div>
 );
-
 export default ProjectCard;

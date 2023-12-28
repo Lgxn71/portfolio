@@ -28,19 +28,25 @@ const aboutPage = () => (
       </PageTitle>
       <div className={styles.aboutParagraphContainer}>
         <p>
-          My name is Ali. I&apos;m an 18-year-old computer science
-          and computer engineering student pursuing my Bachelor&apos;s degree at
-          Sejong University in Seoul. My passion for learning is not just a part
-          of my academic journey; it&apos;s a way of life. As a dedicated and
-          ambitious individual.
+          Hi again, I&apos;m Ali, a Kazakh sophomore student currently pursuing
+          a Bachelor&apos;s degree in Computer Science and Engineering at Sejong
+          University in Seoul, South Korea.
         </p>
         <p>
-          My technical skills includes JavaScript and TypeScript. I specialize
-          in front-end development with expertise in React and Next.js, ensuring
-          seamless and engaging user experiences. Additionally, my skills extend
-          to utilizing state management tools such as Recoil and Redux. Coupled
-          with a designing responsive interfaces using Tailwind CSS and CSS
-          Modules and a for database i can use MongoDB.
+          I am truly passionate about gaining new experiences and working
+          collaboratively in a team. Independently, I have completed several
+          projects to delve deeper into frontend development, significantly
+          enhancing my skills and knowledge. I actively seek opportunities to
+          stay current with industry trends and emerging technologies, often
+          following influencers with profound knowledge and experience in online
+          coding communities. This proactive approach allows me to bring fresh
+          insights and innovative solutions to the teams I work with.
+        </p>
+        <p>
+          My passion for learning is not confined to my academic journey;
+          it&apos;s a way of life. Beyond the realms of coursework and
+          self-study, you will often find me immersed in reading about cultural
+          evolution and historical milestones.
         </p>
       </div>
     </Container>

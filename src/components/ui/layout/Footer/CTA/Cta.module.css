@@ -11,7 +11,7 @@
   width: 620px;
   padding-bottom: 30px;
 }
-@media (max-width: 768px) {
+@media (max-width: 797px) {
   .description {
     width: auto;
   }

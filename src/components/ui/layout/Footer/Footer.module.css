@@ -16,19 +16,50 @@
 
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  justify-content: space-between;
 }
+
+@media screen and (max-width: 620px) {
+  .footer {
+    width: 520px;
+    margin: auto;
+    padding: 60px 30px 100px 30px;
+  }
+}
+
 @media screen and (max-width: 580px) {
   .footer {
-    width: auto;
-    padding: 60px 36px 100px 36px;
+    width: 420px;
+    margin: auto;
+    padding: 60px 0 100px 0;
+  }
+}
+@media (max-width: 481px) {
+  .footer {
+    width: 375px;
+    margin: auto;
+    padding: 60px 0px 100px 0px;
+
+    flex-direction: column;
+    gap: 20px;
   }
 }
 @media (max-width: 435px) {
   .footer {
     width: auto;
+    margin: auto;
+    padding: 60px 30px 100px 30px;
 
-    padding: 60px 36px 100px 36px;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 315px) {
+  .footer {
+    width: auto;
+    margin: auto;
+    padding: 60px 20px 100px 20px;
 
     flex-direction: column;
     gap: 20px;
