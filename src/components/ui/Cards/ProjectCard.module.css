@@ -1,3 +1,4 @@
+/* Base Card Wrapper */
 .projectCardContainer {
   display: flex;
   gap: 20px;
@@ -5,6 +6,33 @@
   max-width: 620px;
 }
 
+/* Icon Container */
+.containerIcon {
+  border-radius: 10px;
+  border: 1px solid var(--color-white-400);
+  background: var(--color-white-100);
+
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.borderInside {
+  width: 97%;
+  height: 97%;
+  margin: auto;
+
+  border: 1px solid var(--color-white-400);
+  border-radius: 9px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Title */
 .title {
   color: var(--color-black-800);
   font-weight: 600;
@@ -15,12 +43,13 @@
 
   padding-bottom: 5px;
 }
-
+/* Links */
 .links {
   display: flex;
   gap: 20px;
 }
 
+/* Media */
 @media (max-width: 375px) {
   .projectCardContainer {
     max-width: 315px;

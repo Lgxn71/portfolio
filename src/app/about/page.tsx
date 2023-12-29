@@ -3,18 +3,21 @@ import Image from "next/image";
 import Block from "@/components/ui/Block/Block";
 import Container from "@/components/ui/Container/Container";
 import PageTitle from "@/components/ui/PageTitle/PageTitle";
+import BorderBlinks from "@/components/ui/BorderBlinks/BorderBlinks";
 
 import styles from "@/styles/about/about.module.css";
 
 const aboutPage = () => (
   <main style={{ display: "flex" }}>
     <Block />
+
     <Container
       iconTopPosition="-69.5px"
       paddingTop="60px"
       paddingBottom="100px"
       hasBorderBottom={true}
     >
+      <BorderBlinks />
       <PageTitle>
         Hey There,
         <Image
@@ -26,12 +29,14 @@ const aboutPage = () => (
           className={styles.img}
         />
       </PageTitle>
+
       <div className={styles.aboutParagraphContainer}>
         <p>
           Hi again! I&apos;m Ali, a Kazakh sophomore student currently pursuing
           a Bachelor&apos;s degree in Computer Science and Engineering at Sejong
           University in Seoul, South Korea.
         </p>
+
         <p>
           I am truly passionate about gaining new experiences and working
           collaboratively in a team. Independently, I have completed several
@@ -42,6 +47,7 @@ const aboutPage = () => (
           coding communities. This proactive approach allows me to bring fresh
           insights and innovative solutions to the teams I work with.
         </p>
+
         <p>
           My passion for learning is not confined to my academic journey;
           it&apos;s a way of life. Beyond the realms of coursework and
@@ -50,6 +56,7 @@ const aboutPage = () => (
         </p>
       </div>
     </Container>
+
     <Block />
   </main>
 );

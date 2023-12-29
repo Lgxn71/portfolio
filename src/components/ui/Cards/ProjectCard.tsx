@@ -1,36 +1,38 @@
-import { FC, ReactNode } from "react";
+import { ReactNode } from "react";
 
-import ProjectIconContainer from "../Icons/ProjectIconContainer";
 import Icon, { IconName } from "../Icons/Icon";
 import Link from "../Link/Link";
 
 import styles from "./ProjectCard.module.css";
 
-interface ProjectCardProps {
-  iconName: IconName;
-  projectTitle: string;
-  projectDescription: string;
-  lifeDemoLink: string;
-  githubLink: string;
-}
+const ProjectCardd = ({ children }: { children: ReactNode }) => (
+  <div className={styles.projectCardContainer}>{children}</div>
+);
+ProjectCardd.Icon = function x({ iconName }: { iconName: IconName }) {
+  return (
+    <div className={styles.containerIcon}>
+      <div className={styles.borderInside}>
+        <Icon name={iconName} />
+      </div>
+    </div>
+  );
+};
 
-const ProjectCard: FC<ProjectCardProps> = ({
-  iconName,
-  projectTitle,
-  projectDescription,
+ProjectCardd.Title = function x({ children }: { children: ReactNode }) {
+  return <h2 className={styles.title}>{children}</h2>;
+};
+ProjectCardd.Description = function x({ children }: { children: ReactNode }) {
+  return <p>{children}</p>;
+};
+
+ProjectCardd.Link = function x({
   lifeDemoLink,
   githubLink,
-}) => (
-  <div className={styles.projectCardContainer}>
-    <ProjectIconContainer>
-      <Icon name={iconName} />
-    </ProjectIconContainer>
-
-    <div>
-      <h1 className={styles.title}>{projectTitle}</h1>
-      <p>{projectDescription}</p>
-    </div>
-
+}: {
+  lifeDemoLink: string;
+  githubLink: string;
+}) {
+  return (
     <div className={styles.links}>
       <Link isTarget href={lifeDemoLink}>
         Live Demo
@@ -39,6 +41,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
         Github
       </Link>
     </div>
-  </div>
-);
-export default ProjectCard;
+  );
+};
+
+export default ProjectCardd;

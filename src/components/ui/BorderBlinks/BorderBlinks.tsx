@@ -4,22 +4,23 @@ import { useInView } from "react-intersection-observer";
 
 import { nanoid } from "nanoid";
 
+import { generateRandomNumberInRange, linePositionGenerator } from "./utils";
+
 import styles from "./BorderBlinks.module.css";
 
 interface Line {
   id: string;
-  direction: "to bottom" | "to right";
+  position: "Left" | "Top" | "Right";
 }
-const randomNumberBetween = (min: number, max: number) =>
-  Math.floor(Math.random() * (max - min + 1) + min);
 
 const BorderBlinks = () => {
   const [lines, setLines] = useState<Line[]>([]);
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
   const { ref: refViewport, inView } = useInView({
     threshold: 0.4,
     triggerOnce: true,
   });
-  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     if (!inView) return;
@@ -28,17 +29,14 @@ const BorderBlinks = () => {
       timeoutRef.current = setTimeout(() => {
         setLines((lines) => [
           ...lines,
-          {
-            direction: Math.random() > 0.5 ? "to bottom" : "to right",
-            id: Date.now().toString(),
-          },
+          { position: linePositionGenerator(), id: Date.now().toString() },
         ]);
 
-        renderLine(randomNumberBetween(3500, 5000));
+        renderLine(generateRandomNumberInRange(3250, 4000));
       }, timeout);
     };
 
-    renderLine(randomNumberBetween(800, 1300));
+    renderLine(generateRandomNumberInRange(700, 1200));
 
     return () => {
       if (timeoutRef.current) clearTimeout(timeoutRef.current);
@@ -52,11 +50,13 @@ const BorderBlinks = () => {
     <div ref={refViewport} className={styles.wrapperDiv}>
       {lines.map((line) => (
         <span
-          key={nanoid(9)}
+          key={nanoid(8)}
           className={
-            line?.direction === "to bottom"
+            line?.position === "Right"
               ? styles.rightBlink
-              : styles.topBlink
+              : line?.position === "Top"
+              ? styles.topBlink
+              : styles.leftBlink
           }
           onAnimationEnd={() => {
             if (line) return removeLine(line.id);

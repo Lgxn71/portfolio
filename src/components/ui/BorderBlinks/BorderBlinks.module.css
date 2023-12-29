@@ -21,10 +21,27 @@
   animation: glowLinesHorizontal 1900ms ease-in forwards,
     fadeinout 1900ms linear forwards;
 }
+
 .rightBlink {
   position: absolute;
   top: 0px;
   right: -1px;
+
+  display: block;
+  height: 10rem;
+  width: 1px;
+
+  background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+
+  -webkit-animation: glowLinesVertical 2000ms ease-in forwards,
+    fadeinout 1800ms linear forwards;
+  animation: glowLinesVertical 2000ms ease-in forwards,
+    fadeinout 1800ms linear forwards;
+}
+.leftBlink {
+  position: absolute;
+  top: 0px;
+  left: -1px;
 
   display: block;
   height: 10rem;
@@ -145,21 +162,6 @@
     100% {
       opacity: 0;
       transform: translateX(35rem);
-    }
-  }
-}
-@media screen and (max-width: 652px) {
-  @-webkit-keyframes glowLinesHorizontal {
-    100% {
-      opacity: 0;
-      transform: translateX(28rem);
-    }
-  }
-
-  @keyframes glowLinesHorizontal {
-    100% {
-      opacity: 0;
-      transform: translateX(28rem);
     }
   }
 }
