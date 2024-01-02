@@ -39,10 +39,10 @@ a {
 }
 
 .logo {
-  color: var(--color-black-800);
-  font-family: var(--font-geist-mono);
-  font-size: 20px;
-  font-weight: 500;
+  color: var(--color-black-800) !important;
+  font-family: var(--font-geist-mono) !important;
+  font-size: 20px !important;
+  font-weight: 500 !important;
 }
 
 .colorGreen100 {
@@ -59,4 +59,3 @@ a {
 .colorBlack800 {
   color: var(--color-black-800) !important;
 }
-
