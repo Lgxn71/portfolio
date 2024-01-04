@@ -5,6 +5,8 @@ import { usePathname } from "next/navigation";
 
 import Link from "next/link";
 
+import { toast } from "sonner";
+
 import styles from "./Links.module.css";
 
 const Links = () => {
@@ -20,6 +22,11 @@ const Links = () => {
   const isActive = (href: string) => href === pathname;
 
   const downloadFile = () => {
+    toast(
+      <div style={{ fontFamily: "var(--font-geist-sans)" }}>
+        Resume download complete.
+      </div>
+    );
     const fileUrl = "/assets/resume/Akhmetbekuly_Mukhammedali_CV.pdf";
     const link = linkRef.current;
     if (link) {
@@ -48,7 +55,7 @@ const Links = () => {
 
       <li>
         <a className="colorGreen100" ref={linkRef} onClick={downloadFile}>
-          resume
+          download resume
         </a>
       </li>
     </>

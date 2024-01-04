@@ -8,7 +8,7 @@
   width: 620px;
   margin: auto;
   padding: 24px 74.5px 24px 74.5px;
-
+  align-items: flex-start;
   justify-content: space-around;
 }
 .links a {

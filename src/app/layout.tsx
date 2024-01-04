@@ -7,6 +7,8 @@ import Footer from "@/components/ui/layout/Footer/Footer";
 import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
 
+import { Toaster } from "sonner";
+
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -18,6 +20,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body className={`${GeistMono.variable} ${GeistSans.variable}`}>
+        <Toaster position="top-center" closeButton /> 
         <Header />
         {children}
         <Footer />
