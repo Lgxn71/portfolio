@@ -12,7 +12,7 @@ const Hero = () => {
       <TypingHeading />
 
       <p className={styles.paragraph}>
-        I am a <span className="colorBlack800">frontend developer</span> based
+        I am a <span className="colorBlack800">Software Engineer</span> based
         in <span className="colorBlack800">Seoul, South Korea</span>, currently
         pursuing my bachelor&apos;s degree in{" "}
         <span className="colorBlack800">Computer Science</span> at{" "}

@@ -15,7 +15,7 @@ const Cta = () => {
     <>
       <Block>
         {pathname === "/" ? (
-          <VerticalNumbers startingNumber={229} numbersLength={2} />
+          <VerticalNumbers startingNumber={222} numbersLength={2} />
         ) : null}
       </Block>
 

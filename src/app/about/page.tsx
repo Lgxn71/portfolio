@@ -32,27 +32,30 @@ const aboutPage = () => (
 
       <div className={styles.aboutParagraphContainer}>
         <p>
-          Hi again! I&apos;m Ali, a Kazakh sophomore student currently pursuing
-          a Bachelor&apos;s degree in Computer Science and Engineering at Sejong
-          University in Seoul, South Korea.
+          Hi! I&apos;m Ali, a junior studying Computer Science and Engineering
+          at Sejong University in Seoul, South Korea.
         </p>
 
         <p>
-          I am truly passionate about gaining new experiences and working
-          collaboratively in a team. Independently, I have completed several
-          projects to delve deeper into frontend development, significantly
-          enhancing my skills and knowledge. I actively seek opportunities to
-          stay current with industry trends and emerging technologies, often
-          following influencers with profound knowledge and experience in online
-          coding communities. This proactive approach allows me to bring fresh
-          insights and innovative solutions to the teams I work with.
+          I love creating digital experiences that make an impact and enjoy
+          turning ideas into something real through technology. Frontend
+          development is my main focus, and working on personal projects has
+          helped me grow both my skills and perspective. I also like staying
+          up-to-date with the latest tech trends and learning from online
+          communities filled with inspiring people.
         </p>
 
         <p>
-          My passion for learning is not confined to my academic journey;
-          it&apos;s a way of life. Beyond the realms of coursework and
-          self-study, you will often find me immersed in reading about cultural
-          evolution and historical milestones.
+          Collaboration is where I really shine - I enjoy bouncing ideas around
+          with others, solving problems as a team, and learning from different
+          perspectives. I&apos;m always curious, whether it&apos;s about coding,
+          history, or how different cultures have shaped the world we live in.
+        </p>
+        <p>
+          When I&apos;m not in front of a screen, I&apos;m probably reading,
+          trying out new tools and technologies, or sketching out ideas for my
+          next project. If this sounds like someone you&apos;d like to work
+          with, let&apos;s connect!
         </p>
       </div>
     </Container>
